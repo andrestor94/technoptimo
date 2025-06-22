@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecno Optimo - Tecnología sin límites</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #0a0a0a;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #1e1e1e, #3a3a3a);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .productos, .ventajas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .producto, .ventaja {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #0a0a0a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #ff5722;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Tecno Optimo Logo">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Tecno Optimo</h1>
+    <p>Tecnología sin límites. PCs armadas, periféricos, notebooks y más.</p>
+    <button>Explorá nuestros productos</button>
+  </section>
+
+  <section class="section" id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <h3>PCs Armadas</h3>
+        <p>Equipos listos para jugar o trabajar con el mejor rendimiento.</p>
+      </div>
+      <div class="producto">
+        <h3>Periféricos</h3>
+        <p>Teclados, mouses, monitores y más para potenciar tu setup.</p>
+      </div>
+      <div class="producto">
+        <h3>Notebooks</h3>
+        <p>Movilidad y potencia en un solo equipo. Las mejores marcas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ventajas">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="ventajas">
+      <div class="ventaja">
+        <h3>Asesoría personalizada</h3>
+        <p>Te ayudamos a elegir el equipo perfecto para vos.</p>
+      </div>
+      <div class="ventaja">
+        <h3>Envíos a todo el país</h3>
+        <p>Recibí tu compra donde estés, rápido y seguro.</p>
+      </div>
+      <div class="ventaja">
+        <h3>Garantía y soporte</h3>
+        <p>Te acompañamos después de la venta con atención real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="4" placeholder="Escribinos tu consulta..." required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tecno Optimo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
